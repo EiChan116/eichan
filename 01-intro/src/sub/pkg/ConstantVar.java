@@ -7,7 +7,6 @@ public class ConstantVar {
 	static final int MIN_PRICE = 1000;
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter price: ");
 		int price = sc.nextInt();
@@ -16,12 +15,9 @@ public class ConstantVar {
 			price = MIN_PRICE;
 			
 			System.out.println("Price: " + price);
-			System.out.println("Expense: "+ (price * RATE));
-			
-			
+			System.out.println("Expense: "+ (price * RATE));	
 		}
-		
-		
+		sc.close();
 	}
 
 }

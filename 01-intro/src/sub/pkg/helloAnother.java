@@ -1,6 +1,6 @@
 package sub.pkg;
 import java.util.Scanner;
-import java.util.*;
+
 public class helloAnother {
 
 	public static void main(String[] args) {
