@@ -8,9 +8,11 @@ public class StringOpreations {
 		String s2 = "Java programming";
 		
 		System.out.format("String1 = %S, String2 = %s\n", s1, s2);
-		System.out.println("No of chars in s1: " + s1.length());;
+		System.out.println("No of chars in s1: " + s1.length());
 		System.out.println("No of chars in s2: " + s2.length());
 		
+		var tmp = s1.toLowerCase();
+		System.out.println("Changed to lower case to s1: " + tmp);
 		
 	}
 
