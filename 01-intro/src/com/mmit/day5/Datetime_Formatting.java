@@ -20,14 +20,14 @@ public class Datetime_Formatting {
 		System.out.println("Default date: " + date);
 		
 		System.out.println("ISO format: " + date.format(f1));
-		System.out.println("ISO format: " + f1.format(date));
+		System.out.println("ISO format: " + f1.format(date));// return string 
 		
 		//custom format FOR date
 		DateTimeFormatter f4 = DateTimeFormatter.ofPattern("MMMM dd yyy");
 		System.out.println("Format1: " + date.format(f4));
 		
 		DateTimeFormatter f5 = DateTimeFormatter.ofPattern("MMM dd yyy");
-		System.out.println("Format1: " + date.format(f5));
+		System.out.println("Format2: " + date.format(f5));
 		System.out.println("----------------------------");
 		//custom format for time
 		LocalTime time = LocalTime.now();
