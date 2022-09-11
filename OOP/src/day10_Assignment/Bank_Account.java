@@ -44,6 +44,7 @@ public class Bank_Account {
 	}
 	//change password
 	public void changePassword () {
+		System.out.println("Would like to change my password.");
 		System.out.print("Enter your pin no: ");
 		String input_pno = sc.nextLine(); 
 			if(pin_no.equals(input_pno)) {
@@ -74,7 +75,7 @@ public class Bank_Account {
 	//show info 
 
 		public void showInfo() {
-			System.out.println(acc_no + "\t" + acc_holder + "\t" + acc_pw+ "\t" + pin_no + "\t" + balance);
+			System.out.println(acc_no + "\t" + acc_holder + "\t\t" + acc_pw + "\t" + pin_no + "\t" + balance);
 		
 	}
 		
@@ -84,7 +85,7 @@ public class Bank_Account {
 			
 			//create object
 			Bank_Account b1;
-			b1 = new Bank_Account(1, "Yasuhiro", "123", "123456");
+			b1 = new Bank_Account(10099, "Toyoda Yasuhiro", "123", "123456");
 //			System.out.println("Please set pin no: ");
 //			input_pno = sc.nextLine();
 			System.out.println(b1.acc_holder + "'s Current balance = " + balance);
@@ -96,7 +97,7 @@ public class Bank_Account {
 			new_balance = balance;
 			System.out.println("new balance: " + new_balance);
 			
-			System.out.println("AccNo\tName\t   Password\tPinNo\tBalance");
+			System.out.println("AccNo\tName\t\t" +"   " +"Password\tPinNo\tBalance");
 			b1.showInfo();
 			System.out.println("-------------------------");
 			
@@ -106,7 +107,7 @@ public class Bank_Account {
 				System.out.print("Enter your withraw amt: ");
 				new_amt = sc.nextInt();
 				b1.withdraw(new_balance, new_amt);
-				System.out.println("AccNo\tName\t   Password\tPinNo\tBalance");
+				System.out.println("AccNo\tName\t\t" +"   " +"Password\tPinNo\tBalance");
 				b1.showInfo();
 				System.out.println("-------------------------");
 
@@ -120,8 +121,10 @@ public class Bank_Account {
 			//change password
 
 			b1.changePassword();
+			
+			System.out.println("----------- Update banck account infomation -----------");
 			System.out.println();
-			System.out.println("AccNo\tName\t  Password\tPinNo\tBalance");
+			System.out.println("AccNo\tName\t\t" +"   " +"Password\tPinNo\tBalance");
 			b1.showInfo();
 			
 			sc.close();
